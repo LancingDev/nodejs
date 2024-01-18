@@ -8,6 +8,10 @@ app.get('/', (req, res) => {
     res.send('this is homepage')
 })
 
+app.get('/abc', (req, res) => {
+    res.send('test page')
+})
+
 app.listen(port, () => {
     console.log(`server is running at port number ${process.env.PORT}`)
 });
